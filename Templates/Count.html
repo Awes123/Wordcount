@@ -1,0 +1,21 @@
+<h1>Counted</h1>
+<br><a href="{% url 'home' %}">Back to homepage</a><br>
+<h1>
+Full Text = {{ fulltext }}
+</h1>
+<h2>
+Words Count = {{ Length }}
+</h2>
+<br><br>
+<ul>
+  {% for word,value in worddictionary %}
+
+<li>Word: {{ word }} <br>  value: {{ value }} </li>
+
+  {% endfor %}
+
+</ul>
+
+<h1>Encrypted= {{ encrpt }}</h1>
+
+<h1>decrypted= {{ dec }}</h1>
